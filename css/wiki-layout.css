@@ -98,13 +98,24 @@ aside h2 {
 }
 
 .profile-image {
-  background-image: url("https://images.unsplash.com/photo-1618979251882-0b40ef3617f0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: 100%;
-  background-position: center 100%;
-  width: var(--aside-width);
-  height: var(--aside-width);
+  background-image: none;
+  text-indent: 0;
+  /*background-size: 100%;*/
+  /*background-position: center 100%;*/
+  /*width: var(--aside-width);*/
+  /*height: var(--aside-width);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  /*text-indent: -1000rem;*/
+}
 
-  text-indent: -1000rem;
+.profile-image img {
+  width: 100%; /* 이미지가 부모 요소에 맞게 확장 */
+  height: auto; /* 비율 유지 */
+  object-fit: cover; /* 비율을 유지하면서 크기에 맞게 자름 */
+  object-position: top right; /* 우측 상단에 위치 */
 }
 
 aside.right-sidebar nav {
